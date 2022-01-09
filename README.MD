@@ -223,4 +223,5 @@ The traffic coming through Nginx ingress will be directed to the service in svc.
 Resources
 
 https://martinfowler.com/bliki/CanaryRelease.html
+
 https://phoenixnap.com/kb/kubernetes-canary-deployments
