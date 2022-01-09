@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "dgSpecHash": "1qDDoA6QIi5t6Dy+l4ilieqB9tuIzcTHq8vvV13tKc/HSIP5fcxSxaLKMeBYUxjAoZYM+D434m25UAUGa6xY4g==",
+  "success": true,
+  "projectFilePath": "/Users/fcandas/Desktop/Canary Deployment K8s/canary_deployment/apps/netcoreapp/netcoreapp.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+}

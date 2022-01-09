@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-api-app
+  namespace: default
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: sample-api
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 20%
+  template:
+    metadata:
+      labels:
+        version: "netcore6"
+        app: sample-api
+    spec:
+      containers:
+      - name:  sample-api
+        image: localhost:5000/sample-api-netcore
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ASPNETCORE_URLS 
+          value: http://*:8080

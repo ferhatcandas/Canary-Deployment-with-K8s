@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: sample-api-ing
+ namespace: default
+spec:
+ rules:
+ - host: sample-api.com
+   http:
+     paths:
+       - path: /
+         backend:
+           serviceName: sample-api-svc
+           servicePort: 8080
+ 

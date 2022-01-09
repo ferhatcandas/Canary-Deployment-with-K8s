@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/fcandas/Desktop/Canary Deployment K8s/canary_deployment/apps/netcoreapp/netcoreapp.csproj": {}
+  },
+  "projects": {
+    "/Users/fcandas/Desktop/Canary Deployment K8s/canary_deployment/apps/netcoreapp/netcoreapp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/fcandas/Desktop/Canary Deployment K8s/canary_deployment/apps/netcoreapp/netcoreapp.csproj",
+        "projectName": "netcoreapp",
+        "projectPath": "/Users/fcandas/Desktop/Canary Deployment K8s/canary_deployment/apps/netcoreapp/netcoreapp.csproj",
+        "packagesPath": "/Users/fcandas/.nuget/packages/",
+        "outputPath": "/Users/fcandas/Desktop/Canary Deployment K8s/canary_deployment/apps/netcoreapp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/fcandas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://nexus.hepsiburada.com:8081/nexus/service/local/nuget/nuget/": {},
+          "http://nuget.hepsiburada.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

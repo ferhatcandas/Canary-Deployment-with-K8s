@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-api-canary-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample-api
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 20%
+  template:
+    metadata:
+      labels:
+        version: "golang"
+        app: sample-api
+    spec:
+      containers:
+      - name:  sample-api
+        image: localhost:5000/sample-api-golang
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
